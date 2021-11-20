@@ -8,4 +8,5 @@ This python program are set from beginner programmes to more complex programs
 
 4.choose_your_own_adventure -> This folder contains the adventure game written in python and in this file we use the condition like to direct what the user on what to input so that he/she can get into the next step of the game
 
-5.IN PROGRESS
+5.Password_manager -> This folder contains the password manager application that store the username and the password in the plain file but for the security purpose we added the encryptions of the password so that it can be more secured
+

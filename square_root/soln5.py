@@ -20,6 +20,7 @@ x = num # Approximate root
 # Compute square root using newton-raphson method
 for i in range(0, 10):
     x = (x + num / x) / 2
+    print("Approximated value:", x)
 
 print("The square root of the number is:", num, "is", x)
 

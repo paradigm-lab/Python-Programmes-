@@ -1,5 +1,5 @@
+import time
 from player import HumanPlayer, RandomComputerPlayer
-
 
 class TicTacToe:
     def __init__(self):
@@ -115,7 +115,9 @@ def play(game, x_player, o_player, print_game=True):
 
             # After we made our move, We need to alternate letters
             letter = 'O' if letter == 'X' else 'X'
-
+        
+        # tiny break
+        time.sleep(0.8)
 
     if print_game:
         print('It\'s a tie!')

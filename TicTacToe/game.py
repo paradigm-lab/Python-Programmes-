@@ -34,7 +34,7 @@ class TicTacToe:
     def make_move(self, square, letter):
         # if valid move, then make the move (assign square to letter)
         # Then return true. If invalid, Return false
-        if self.board[square] = ' ':
+        if self.board[square] == ' ':
             self.board[square] = letter
             if self.winner(square, letter):
                 self.current_winner = letter

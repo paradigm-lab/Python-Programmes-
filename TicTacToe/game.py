@@ -33,8 +33,13 @@ class TicTacToe:
         # Then return true. If invalid, Return false
         if self.board[square] = ' ':
             self.board[square] = letter
+            if self.winner(square, letter):
+                self.current_winner = letter
             return True
         return False
+
+    def winner(self, square, letter):
+        # winner if 3 in a row
 
 
     def empty_squares(self):
@@ -49,6 +54,7 @@ class TicTacToe:
 
 
 def play(game, x_player, o_player, print_game=True):
+    # Returns the winner of the game(the letter)! of None for a tie
     if print_game:
         game.print_board_nums()
 
@@ -70,11 +76,18 @@ def play(game, x_player, o_player, print_game=True):
                 print(letter + f" Makes a move to square {square}")
                 game.print_board()
                 print('') # just empty line
+            
+            if game.current_winner:
+                if print_game:
+                    print(letter + ' wins!')
+                return letter 
 
             # After we made our move, We need to alternate letters
             letter = 'O' if letter == 'X' else 'X'
 
 
+        if print_game:
+            print('It\'s a tie!')
 
 
 

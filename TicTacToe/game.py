@@ -117,8 +117,8 @@ def play(game, x_player, o_player, print_game=True):
             letter = 'O' if letter == 'X' else 'X'
 
 
-        if print_game:
-            print('It\'s a tie!')
+    if print_game:
+        print('It\'s a tie!')
 
 
 if __name__ == '__main__':

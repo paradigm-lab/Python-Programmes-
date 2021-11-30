@@ -28,6 +28,15 @@ class TicTacToe:
                 moves.append(i)
         return moves
 
+    def make_move(self, square, letter):
+        # if valid move, then make the move (assign square to letter)
+        # Then return true. If invalid, Return false
+        if self.board[square] = ' ':
+            self.board[square] = letter
+            return True
+        return False
+
+
     def empty_squares(self):
         return ' ' in self.board
 
@@ -56,6 +65,14 @@ def play(game, x_player, o_player, print_game=True):
             square = x_player.get_move(game)
 
         # let's define a function to make a move!
+        if game.make_move(square, letter):
+            if print_game:
+                print(letter + f" Makes a move to square {square}")
+                game.print_board()
+                print('') # just empty line
+
+            # After we made our move, We need to alternate letters
+            letter = 'O' if letter == 'X' else 'X'
 
 
 

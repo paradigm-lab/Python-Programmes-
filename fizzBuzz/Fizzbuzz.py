@@ -26,7 +26,7 @@ def testFizzbuzz():
     assert fizzbuzz(6) == 'fizz'
 
 def fizzbuzz(number):
-    if number == 3:
+    if number % 3 == 0:
         return 'fizz'
     elif number == 5:
         return 'buzz'

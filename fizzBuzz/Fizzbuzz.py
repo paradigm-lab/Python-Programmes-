@@ -24,7 +24,10 @@ def testFizzbuzz():
     
 
 def fizzbuzz(number):
-    return ''
+    if number == 3:
+        return 'fizz'
+    else:
+        return ''
 
 
 testFizzbuzz()

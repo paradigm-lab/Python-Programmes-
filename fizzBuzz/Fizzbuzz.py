@@ -16,4 +16,10 @@
 
 """
 
+# The test function for the fizzbuzz function
+def testFizzbuzz():
+    assert fizzbuzz(1) == ''
+
+def fizzbuzz():
+    pass
 

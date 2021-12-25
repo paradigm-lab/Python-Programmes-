@@ -20,6 +20,8 @@
 def testFizzbuzz():
     assert fizzbuzz(1) == ''
 
-def fizzbuzz():
-    pass
+def fizzbuzz(number):
+    return ''
 
+
+testFizzbuzz()

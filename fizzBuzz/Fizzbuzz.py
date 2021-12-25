@@ -23,6 +23,7 @@ def testFizzbuzz():
     assert fizzbuzz(3) == 'fizz'
     assert fizzbuzz(4) == ''
     assert fizzbuzz(5) == 'buzz'
+    assert fizzbuzz(6) == 'fizz'
 
 def fizzbuzz(number):
     if number == 3:

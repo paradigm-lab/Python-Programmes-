@@ -19,6 +19,7 @@
 # The test function for the fizzbuzz function
 def testFizzbuzz():
     assert fizzbuzz(1) == ''
+    assert fizzbuzz(2) == ''
 
 def fizzbuzz(number):
     return ''

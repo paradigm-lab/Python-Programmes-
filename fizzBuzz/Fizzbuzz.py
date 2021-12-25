@@ -37,5 +37,14 @@ def fizzbuzz(number):
     else:
         return ''
 
+def printResult():
+    '''
+        Our function in pseudocode:
+    For number btw 0 to 20.
+    print out the number and fizzbuzz(number).
+    '''
+    for index in range(0, 21):
+        print(index, " " , fizzbuzz(index))
 
 testFizzbuzz()
+printResult()

@@ -25,6 +25,7 @@ def testFizzbuzz():
     assert fizzbuzz(5) == 'buzz'
     assert fizzbuzz(6) == 'fizz'
     assert fizzbuzz(10) == 'buzz'
+    assert fizzbuzz(15) == 'fizz buzz'
 
 def fizzbuzz(number):
     if number % 3 == 0:

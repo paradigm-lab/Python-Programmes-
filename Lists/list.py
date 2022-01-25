@@ -3,3 +3,5 @@
 mylist = ["Banana", "Cherry", "Apple"]
 print(mylist)
 
+mylist2 = list()
+print(mylist2)

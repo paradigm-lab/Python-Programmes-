@@ -24,3 +24,16 @@ if "Banana" in mylist:
     print("Yes")
 else:
     print("No")
+
+
+print("\n")
+
+# Using the len function to print the length of my list
+print(len(mylist))
+
+
+print("\n")
+
+# Using the append method to add the item in the last possition of the list
+mylist.append("Lemon")
+print(mylist)

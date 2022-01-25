@@ -37,3 +37,19 @@ print("\n")
 # Using the append method to add the item in the last possition of the list
 mylist.append("Lemon")
 print(mylist)
+
+
+print("\n")
+
+# Using the insert method to add the item to the specific location
+mylist.insert(1, "Blueberry")
+print(mylist)
+
+
+print("\n")
+
+
+# Used the pop method to remove the item in the list
+out = mylist.pop()
+print(out)
+print(mylist)

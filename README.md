@@ -20,6 +20,9 @@ What python is used for?
 	-> Web Scraping
 	-> Automation		
 
+Python Interpreter 
+	-> Knows how to execute Python code
+	-> Translates our program into machine readable binary code
 
 					Here are python programmes
 This python program are set from beginner programmes to more complex programs

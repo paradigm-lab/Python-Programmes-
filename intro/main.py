@@ -8,4 +8,8 @@
 
 
 # Getting the minutes for within 20 days
+# String concatination
 print("20 days are " + str(20 * 24 * 60) + " minutes")
+
+# String Format
+print(f"20 days are {20 * 24 * 60} minutes")

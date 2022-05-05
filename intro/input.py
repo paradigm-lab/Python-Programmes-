@@ -26,7 +26,8 @@ def validate_and_execute():
         print("Your input is not a number. Don't ruin my program")
 
 
-while True:
+user_input = ""
+while user_input != "exit":
     # To ask the user for a input 
     # Built-In F(x) are provided by Python language itself 
     user_input = input("Hey user, enter a number of days and I will convert it to hours! \n")

@@ -6,19 +6,23 @@ name_of_unit = "seconds"
 # Function Definition
 # Code Encapsulation to the function to make a clean up of the code
 def days_to_units(num_of_days):
-    if num_of_days > 0:
-        return f"{num_of_days} days are {num_of_days * calculation_to_seconds} {name_of_unit}"
-    elif num_of_days == 0: 
-        return "Your entered a 0, Please enter a valid positive number" 
-    else:
-        return "You entered a negative value, so no conversion for you!"
+    return f"{num_of_days} days are {num_of_days * calculation_to_seconds} {name_of_unit}"
 
 def validate_and_execute():
-    if user_input.isdigit():
+    #if user_input.isdigit():
+    try:    
         # Return value of inner function is the input value for the outer function
-        calculated_value = days_to_units(int(user_input))
-        print(calculated_value)
-    else:
+        user_input_number = int(user_input)
+        # using the nested if..else.. statement 
+        if user_input_number > 0:
+            calculated_value = days_to_units(user_input_number)
+            print(calculated_value)
+        elif user_input_number == 0:
+            print("you entered a 0, Please enter a valid positive number")
+        else:
+            print("You entered a negative number, no conversion for you!")
+
+    except ValueError:
         print("Your input is not a number. Don't ruin my program")
 
 

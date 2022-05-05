@@ -10,10 +10,10 @@ name_of_unit = "seconds"
 
 
 # Function Definition
-def days_to_units(num_of_days, message): 
-	print(f"{num_of_days} days are {num_of_days * calculation_to_seconds} {name_of_unit}")
-	print(message)
+# With the return type
+def days_to_units(num_of_days): 
+    return (f"{num_of_days} days are {num_of_days * calculation_to_seconds} {name_of_unit}")
 
-# Function Calling
-days_to_units(20, "Awesome")
-days_to_units(35, "Great")
+# Function Calling and storing the return type of the function to the variable
+my_var = days_to_units(20)
+print(my_var)

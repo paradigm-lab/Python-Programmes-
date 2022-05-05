@@ -4,6 +4,7 @@ name_of_unit = "seconds"
 
 
 # Function Definition
+# Code Encapsulation to the function to make a clean up of the code
 def days_to_units(num_of_days):
     if num_of_days > 0:
         return f"{num_of_days} days are {num_of_days * calculation_to_seconds} {name_of_unit}"
@@ -12,14 +13,17 @@ def days_to_units(num_of_days):
     else:
         return "You entered a negative value, so no conversion for you!"
 
+def validate_and_execute():
+    if user_input.isdigit():
+        # Return value of inner function is the input value for the outer function
+        calculated_value = days_to_units(int(user_input))
+        print(calculated_value)
+    else:
+        print("Your input is not a number. Don't ruin my program")
+
 
 # To ask the user for a input 
-# Built-In F(x) are provided by Python language itself
+# Built-In F(x) are provided by Python language itself 
 user_input = input("Hey user, enter a number of days and I will convert it to hours! \n")
+validate_and_execute()
 
-if user_input.isdigit():
-    # Return value of inner function is the input value for the outer function
-    calculated_value = days_to_units(int(user_input))
-    print(calculated_value)
-else:
-    print("Your input is not a number. Don't ruin my program")

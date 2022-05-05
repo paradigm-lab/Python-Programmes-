@@ -17,6 +17,9 @@ def days_to_units(num_of_days):
 # Built-In F(x) are provided by Python language itself
 user_input = input("Hey user, enter a number of days and I will convert it to hours! \n")
 
-# Return value of inner function is the input value for the outer function
-calculated_value = days_to_units(int(user_input))
-print(calculated_value)
+if user_input.isdigit():
+    # Return value of inner function is the input value for the outer function
+    calculated_value = days_to_units(int(user_input))
+    print(calculated_value)
+else:
+    print("Your input is not a number. Don't ruin my program")

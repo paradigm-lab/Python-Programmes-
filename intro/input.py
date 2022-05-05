@@ -9,5 +9,5 @@ def days_to_units(num_of_days):
 
 # To ask the user for a input 
 # Built-In F(x) are provided by Python language itself
-input()
+input("Hey user, enter a number of days and I will convert it to hours!")
 

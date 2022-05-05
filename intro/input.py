@@ -23,7 +23,7 @@ def validate_and_execute():
             print("You entered a negative number, no conversion for you!")
 
     except ValueError:
-        print("Your input is not a number. Don't ruin my program")
+        print("Your input is not a valid number. Don't ruin my program")
 
 
 user_input = ""

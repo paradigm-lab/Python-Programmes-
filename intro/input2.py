@@ -42,11 +42,11 @@ user_input = ""
 while user_input != "exit":
     # To ask the user for a input 
     # Built-In F(x) are provided by Python language itself 
-    user_input = input("Hey user, enter a number of days and I will convert it to hours! \n")
+    user_input = input("Hey user, enter a number of days as a comma separted list and I will convert it to seconds \n")
     
     # The split() will splits a string into a list
     # By default separator is any whitespace it can be overrided
-    for num_of_days_element in user_input.split(): 
+    for num_of_days_element in user_input.split(","): 
         validate_and_execute()
 
 

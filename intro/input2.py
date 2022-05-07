@@ -11,6 +11,10 @@ Lists -> To store multiple items in a single variable
       -> Change items in the list
       -> Access item of the list -> Using the index number eg: fruits[0]
 
+Sets -> Built-in data type of python a
+     -> as with Lists, used to store multiple items of data
+     -> Does NOT allow duplicate values
+
 For loop
       -> Is used for iterating over a sequence (like a list)
       -> So we can execute samething for each item in a list

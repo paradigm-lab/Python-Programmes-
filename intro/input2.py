@@ -4,6 +4,13 @@ Data Types: Integers, Strings, Boolean, Float
 Lists -> To store multiple items in a single variable
       -> A list can contain different data types
 
+      Basic List Operations:
+      -> Create a list ->  Using the square brackets
+      -> Add an item to the list -> Using the append() method 
+      -> Remove an item from the list
+      -> Change items in the list
+      -> Access item of the list -> Using the index number eg: fruits[0]
+
 For loop
       -> Is used for iterating over a sequence (like a list)
       -> So we can execute samething for each item in a list
@@ -45,11 +52,9 @@ while user_input != "exit":
     user_input = input("Hey user, enter a number of days as a comma separted list and I will convert it to seconds \n")
     print(type(user_input.split(","))) 
     print(user_input.split(", ")) 
+
     # The split() will splits a string into a list
     # By default separator is any whitespace it can be overrided
+    # Looping through a list and getting one element at a time and that is why we don't use the index
     for num_of_days_element in user_input.split(", "): 
         validate_and_execute()
-
-
-
-
